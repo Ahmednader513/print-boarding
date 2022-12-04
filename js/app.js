@@ -13,12 +13,6 @@ openIcon.addEventListener("click", function() {
         links.style.display = "block";
     }
 
-    if(nav.style.paddingBottom === "10px") {
-        nav.style.paddingBottom = "25px";
-    } else {
-        nav.style.paddingBottom = "10px";
-    }
-
     if(openIcon.style.display === "none") {
         openIcon.style.display = "block";
     } else {
@@ -41,12 +35,6 @@ closeIcon.addEventListener("click", function() {
         links.style.display = "none";
     }
 
-    if(nav.style.paddingBottom === "25px") {
-        nav.style.paddingBottom = "10px";
-    } else {
-        nav.style.paddingBottom = "25px";
-    }
-
     if(openIcon.style.display === "block") {
         openIcon.style.display = "none";
     } else {
@@ -62,3 +50,22 @@ closeIcon.addEventListener("click", function() {
 });
 
 // Nav End
+
+// Faq Start
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+// Faq End
