@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
+
+:root {
+    --blue: hsl(231, 69%, 60%);
+    --red: hsl(0, 94%, 66%);
+    --grayish-blue: hsl(229, 8%, 60%);
+    --very-dark-blue: hsl(229, 31%, 21%);
+    --font: 'Rubik', sans-serif;
+    --font-size: 18px;
+}
+
+/* Global Values Start */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Alexandria', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.icon {
+    display: none;
+}
+
+/* Global Values End */
+
+
+/* Nav Start */
+
+nav {
+    background-color: black;
+    background: rgb(18,89,179);
+    background: linear-gradient(90deg, rgba(18,89,179,1) 54%, rgba(18,89,179,1) 54%);
+    direction: rtl;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .container .logo .image {
+    width: 100%;
+}
+
+nav .container .logo .image img {
+    width: 100px;
+}
+
+@media screen and (max-width: 426px) {
+
+    nav {
+        position: relative;
+    }
+
+    nav .links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        margin: auto;
+        left: 0;
+        background-color: #1259b3;
+        z-index: 3;
+    }
+
+    nav .links ul {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        gap: 0;
+    }
+
+    nav .links li {
+        border-top: 1px solid #0d4794;
+        padding: 10px 0;
+    }
+
+    nav .links li:nth-child(4) {
+        border-bottom: 1px solid #0d4794;
+    }
+
+    nav .icon .close {
+        display: none;
+    }
+
+    nav .icon {
+        display: block;
+        color: white;
+    }
+
+    nav .container .logo .image img {
+        width: 75px;
+    }
+
+}
+
+/* Nav End */
+
+
+/* Faq Start */
+
+.faq-section {
+    padding: 100px 0;
+    direction: rtl;
+}
+
+.faq-section .title {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.faq-section .dropdowns {
+    margin: 100px auto;
+    width: 50%;
+}
+
+.faq-section .dropdowns ul:nth-child(1) {
+    border-top: 2px solid var(--grayish-blue);
+}
+
+.faq-section .dropdowns ul:nth-child(4) {
+    border-bottom: 2px solid var(--grayish-blue);
+}
+
+.faq-section .dropdowns ul {
+    padding: 25px 0;
+    list-style: none;
+    border-top: 1px solid var(--grayish-blue);
+    border-bottom: 1px solid var(--grayish-blue);
+    position: relative;
+}
+
+.faq-section .dropdowns ul h4 {
+    cursor: pointer;
+    width: 90%;
+}
+
+.faq-section .dropdowns ul h4:hover {
+    color: var(--red);
+}
+
+.faq-section .dropdowns ul img {
+    cursor: pointer;
+}
+
+.faq-section .dropdowns ul img {
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+
+.faq-section .dropdowns ul li {
+    line-height: 2;
+}
+
+.rotate {
+    transform: rotateX(180deg);
+}
+
+.filter-red{
+    filter: invert(62%) sepia(53%) saturate(4807%) hue-rotate(327deg) brightness(101%) contrast(95%);
+}
+
+.answer-1 {
+    display: block;
+    padding: 25px 0;
+}
+
+.show-1 {
+    display: none!important;
+}
+
+.answer-2 {
+    display: block;
+    padding: 25px 0;
+}
+
+.show-2 {
+    display: none!important;
+}
+
+.answer-3 {
+    display: block;
+    padding: 25px 0;
+}
+
+.show-3 {
+    display: none!important;
+}
+
+.answer-4 {
+    display: block;
+    padding: 25px 0;
+}
+
+.show-4 {
+    display: none!important;
+}
+
+.answer-5 {
+    display: block;
+    padding: 25px 0;
+}
+
+.show-5 {
+    display: none!important;
+}
+
+.answer-6 {
+    display: block;
+    padding: 25px 0;
+}
+
+.show-6 {
+    display: none!important;
+}
+
+.answer-7 {
+    display: block;
+    padding: 25px 0;
+}
+
+.show-7 {
+    display: none!important;
+}
+
+.answer-8 {
+    display: block;
+    padding: 25px 0;
+}
+
+.show-8 {
+    display: none!important;
+}
+
+.faq-section .button {
+    margin: auto;
+    text-align: center;
+}
+
+.faq-section .button button {
+    background-color: var(--blue);
+    color: white;
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 2.5px 5px 10px #888888;
+    transition: 0.2s;
+}
+
+.faq-section .button button:hover {
+    background-color: white;
+    color: var(--blue);
+}
+
+@media screen and (max-width: 426px) {
+
+    .faq-section .container .dropdowns {
+        width: 90%;
+    }
+
+}
+
+/* Faq End */
+
+/* Footer Start */
+
+footer {
+    background-color: #1259b3;
+    padding: 25px 0;
+    color: white;
+}
+
+footer .container {
+    display: block;
+}
+
+footer .container .text p {
+    text-align: center;
+}
+
+/* Footer End */

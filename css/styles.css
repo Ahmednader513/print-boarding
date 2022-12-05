@@ -102,6 +102,10 @@ nav .container .logo .image img {
         color: white;
     }
 
+    nav .container .logo .image img {
+        width: 75px;
+    }
+
 }
 
 /* Nav End */
@@ -182,7 +186,7 @@ nav .container .logo .image img {
 .main-section .container .cards {
     display: grid;
     width: 100%;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     text-align: center;
     gap: 50px;
@@ -196,10 +200,10 @@ nav .container .logo .image img {
 
 .main-section .container .cards .card img {
     position: relative;
-    width: 200px;
+    width: 400px;
     height: 200px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .main-section .container .cards .card:hover {
@@ -226,6 +230,10 @@ nav .container .logo .image img {
     .main-section .container .cards {
         grid-template-columns: auto;
         gap: 25px;
+    }
+
+    .main-section .container .cards .card img {
+        width: 300px;
     }
 
     .main-section {
@@ -326,57 +334,6 @@ nav .container .logo .image img {
 }
 
 /* About End */
-
-/* Faq Start */
-
-.faq-section {
-    padding: 100px 0;
-}
-
-.faq-section .title {
-    text-align: center;
-    padding: 50px 0;
-}
-
-.faq-section .container {
-    display: flex;
-    flex-direction: column;
-}
-
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-    margin: 25px 0;
-  }
-  
-  .active, .accordion:hover {
-    background-color: #ccc; 
-  }
-  
-  .panel {
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-    overflow: hidden;
-  }
-
-  @media screen and (max-width: 426px) {
-    
-    .faq-section {
-        padding: 50px 0;
-    }
-
-}
-
-/* Faq End */
 
 /* Contact Start */
 
